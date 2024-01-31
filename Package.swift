@@ -55,8 +55,8 @@ let packageDependencies: [Package.Dependency] = [
     from: "1.2.0"
   ),
   .package(
-    url: "https://github.com/apple/swift-protobuf.git",
-    from: "1.20.2"
+    url: "https://github.com/tangem/swift-protobuf.git",
+    branch: "feature/IOS-5792-SPM-dependencies-support"
   ),
   .package(
     url: "https://github.com/apple/swift-log.git",
