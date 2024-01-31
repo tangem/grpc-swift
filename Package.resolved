@@ -28,15 +28,6 @@
       }
     },
     {
-      "identity" : "swift-distributed-tracing",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-distributed-tracing.git",
-      "state" : {
-        "revision" : "49b7617717a09f6b781c9a11e1628e3315d8d4fe",
-        "version" : "1.0.1"
-      }
-    },
-    {
       "identity" : "swift-docc-plugin",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-docc-plugin",
@@ -124,15 +115,6 @@
       "state" : {
         "branch" : "feature/IOS-5792-SPM-dependencies-support",
         "revision" : "9e56dadd3a3d865bd6ff44847cfc27305dc7b55e"
-      }
-    },
-    {
-      "identity" : "swift-service-context",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-service-context.git",
-      "state" : {
-        "revision" : "ce0141c8f123132dbd02fd45fea448018762df1b",
-        "version" : "1.0.0"
       }
     },
     {
