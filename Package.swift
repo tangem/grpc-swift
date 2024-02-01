@@ -55,7 +55,7 @@ let packageDependencies: [Package.Dependency] = [
     from: "1.2.0"
   ),
   .package(
-    url: "https://github.com/tangem/swift-protobuf.git",
+    url: "https://github.com/tangem/swift-protobuf-binaries.git",
     branch: "feature/IOS-5792-SPM-dependencies-support"
   ),
   .package(
@@ -124,11 +124,11 @@ extension Target.Dependency {
     package: "swift-nio-transport-services"
   )
   static let logging: Self = .product(name: "Logging", package: "swift-log")
-  static let protobuf: Self = .product(name: "SwiftProtobuf", package: "swift-protobuf")
   static let protobufPluginLibrary: Self = .product(
     name: "SwiftProtobufPluginLibrary",
     package: "swift-protobuf"
   )
+  static let protobuf: Self =  .product(name: "SwiftProtobuf", package: "swift-protobuf-binaries")
   static let dequeModule: Self = .product(name: "DequeModule", package: "swift-collections")
   static let atomics: Self = .product(name: "Atomics", package: "swift-atomics")
 
