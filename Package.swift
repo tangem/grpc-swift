@@ -124,10 +124,6 @@ extension Target.Dependency {
     package: "swift-nio-transport-services"
   )
   static let logging: Self = .product(name: "Logging", package: "swift-log")
-  static let protobufPluginLibrary: Self = .product(
-    name: "SwiftProtobufPluginLibrary",
-    package: "swift-protobuf"
-  )
   static let protobuf: Self =  .product(name: "SwiftProtobuf", package: "swift-protobuf-binaries")
   static let dequeModule: Self = .product(name: "DequeModule", package: "swift-collections")
   static let atomics: Self = .product(name: "Atomics", package: "swift-atomics")
@@ -183,25 +179,6 @@ extension Target {
     path: "Sources/CGRPCZlib",
     linkerSettings: [
       .linkedLibrary("z"),
-    ]
-  )
-
-  static let protocGenGRPCSwift: Target = .executableTarget(
-    name: "protoc-gen-grpc-swift",
-    dependencies: [
-      .protobuf,
-      .protobufPluginLibrary,
-    ],
-    exclude: [
-      "README.md",
-    ]
-  )
-
-  static let grpcSwiftPlugin: Target = .plugin(
-    name: "GRPCSwiftPlugin",
-    capability: .buildTool(),
-    dependencies: [
-      .protocGenGRPCSwift,
     ]
   )
 
@@ -532,16 +509,6 @@ extension Product {
     name: "GRPCReflectionService",
     targets: ["GRPCReflectionService"]
   )
-
-  static let protocGenGRPCSwift: Product = .executable(
-    name: "protoc-gen-grpc-swift",
-    targets: ["protoc-gen-grpc-swift"]
-  )
-
-  static let grpcSwiftPlugin: Product = .plugin(
-    name: "GRPCSwiftPlugin",
-    targets: ["GRPCSwiftPlugin"]
-  )
 }
 
 // MARK: - Package
@@ -553,16 +520,12 @@ let package = Package(
     .grpcCore,
     .cgrpcZlib,
     .grpcReflectionService,
-    .protocGenGRPCSwift,
-    .grpcSwiftPlugin,
   ],
   dependencies: packageDependencies,
   targets: [
     // Products
     .grpc,
     .cgrpcZlib,
-    .protocGenGRPCSwift,
-    .grpcSwiftPlugin,
     .reflectionService,
 
     // Tests etc.
