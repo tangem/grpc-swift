@@ -114,7 +114,7 @@
       "location" : "https://github.com/tangem/swift-protobuf-binaries.git",
       "state" : {
         "branch" : "feature/IOS-5792-SPM-dependencies-support",
-        "revision" : "7f7a414b093735ab5431d6a45b73868bcd55d5ac"
+        "revision" : "bb1cf0deaa34d288ed74e7f47c5274915ed90213"
       }
     },
     {
