@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tangem/swift-protobuf-binaries.git",
       "state" : {
-        "branch" : "feature/IOS-5792-SPM-dependencies-support",
-        "revision" : "bb1cf0deaa34d288ed74e7f47c5274915ed90213"
+        "revision" : "de30521530591d98be12133724e3d78bc0524e41",
+        "version" : "1.25.2-tangem1"
       }
     },
     {
