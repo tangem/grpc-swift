@@ -3,8 +3,8 @@ project.xcworkspace
 xcuserdata
 DerivedData/
 .build
-.swiftpm
 build
+xcuserdata/
 /protoc-gen-swift
 /protoc-gen-grpc-swift
 third_party/**
@@ -20,6 +20,5 @@ Examples/EchoWeb/package-lock.json
 dev/codegen-tests/**/generated/*
 /scripts/.swiftformat-source/
 /scripts/.swift-format-source/
-Package.resolved
 *.out.*
 /Performance/Benchmarks/.benchmarkBaselines/
