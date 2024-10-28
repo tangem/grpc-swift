@@ -56,7 +56,7 @@ let packageDependencies: [Package.Dependency] = [
   ),
   .package(
     url: "https://github.com/tangem/swift-protobuf-binaries.git",
-    exact: "1.25.2-tangem1"
+    .upToNextMajor(from: "1.25.2-tangem1")
   ),
   .package(
     url: "https://github.com/apple/swift-log.git",
