@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tangem/swift-protobuf-binaries.git",
       "state" : {
-        "revision" : "de30521530591d98be12133724e3d78bc0524e41",
-        "version" : "1.25.2-tangem1"
+        "revision" : "594a9b8c47df13087ee0a1f25dbc64173604d0e9",
+        "version" : "1.25.2-tangem3"
       }
     },
     {
